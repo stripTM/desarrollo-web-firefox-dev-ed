@@ -61,7 +61,8 @@ main {
      display: none;
    }
    input {
-     padding: 0.5em 0.8em;
+     box-sizing: border-box;
+     padding: 0.8em 0.8em;
      font-size: 1.2em;
      margin: 0.2em 0;
      width: 17em;
