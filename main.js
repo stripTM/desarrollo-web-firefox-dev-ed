@@ -1,4 +1,4 @@
-LOGIN = {
+var LOGIN = {
 	$password : null,
 	init : function() {
 		// Añadir control para desenmascarar la contraseña
