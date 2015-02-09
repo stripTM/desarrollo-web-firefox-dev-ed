@@ -1,11 +1,16 @@
 LOGIN = {
+	$password : null,
 	init : function() {
 		// Añadir control para desenmascarar la contraseña
-		var $password = $("#password");
+		LOGIN.$password = $("#password");
 		var showPassword = document.createElement("a");
 		showPassword.setAttribute("id", "showPassword");
-		$password.after(showPassword);
-
+		LOGIN.$password.after(showPassword);
+		$(showPassword).on("click", LOGIN.togglePasswordMask);
+	},
+	togglePasswordMask : function() {
+		var newType = (LOGIN.$password.attr("type") === "password") ? "text" : "password";
+		LOGIN.$password.attr("type", newType);
 	}
 }
 
