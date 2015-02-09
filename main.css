@@ -113,3 +113,23 @@ footer {
   .copyright {
     color: #333;
   }
+
+@media only screen and (max-width: 768px){
+header {
+	flex-direction: column;
+}
+  header nav {
+    padding-left: 0em;
+    margin-left: 3em;
+  }
+main {
+  flex-direction: column;
+}
+  article,
+  form {
+    width: 100%;
+  }
+   input {
+     width: 80%;
+     
+   }
