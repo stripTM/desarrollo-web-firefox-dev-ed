@@ -91,6 +91,12 @@ main {
    input:focus {
      box-shadow: #ccc 0 0 0.8em;
    }
+  #showPassword {
+   display: inline-block;
+   background-color: red;
+   width: 2em;
+   height: 2em;
+  }
 footer {
   margin: 0;
   background-color: #fff;
